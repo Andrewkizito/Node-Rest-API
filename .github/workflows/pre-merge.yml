@@ -7,7 +7,7 @@ on:
       - main
 
 jobs:
-  build_app:
+  lint and check for errors:
     runs-on: ubuntu-latest
     if: github.event.pull_request.head.ref != 'bump'
     steps:
