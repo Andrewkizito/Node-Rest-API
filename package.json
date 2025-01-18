@@ -1,11 +1,12 @@
 {
   "name": "node-custom-router",
+  "type": "module",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "lint": "eslint --fix ./src/*",
-    "watch": "nodemon --exec 'tsc --project tsconfig.json' --watch src",
+    "watch": "tsc --watch --project tsconfig.json",
     "build": "tsc --project tsconfig.json",
     "dev": "npm run build && nodemon dist/index.js",
     "start": "node dist/index.js",
