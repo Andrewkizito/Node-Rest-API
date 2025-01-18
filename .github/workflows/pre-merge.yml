@@ -2,14 +2,14 @@ name: "Check compilation"
 
 on:
   pull_request:
-    types: [opened, synchronize]
+    types: [opened, synchronize, reopened]
     branches:
       - main
 
 jobs:
   lint and check for errors:
     runs-on: ubuntu-latest
-    if: github.event.pull_request.head.ref != 'bump' 
+    if: github.event.pull_request.head.ref != 'bump'
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
