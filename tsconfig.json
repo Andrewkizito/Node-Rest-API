@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+        "lib": ["ES6"],
+        "target": "ESNext",
+        "baseUrl": "./src",
+        "allowJs": true,
+        "alwaysStrict": true,
+        "outDir": "./dist",
+        "experimentalDecorators": true,
+        "moduleResolution": "bundler",
+        "isolatedModules": true,
+        "incremental": true
+    },
+    "compileOnSave": true,
+    "exclude": ["./node_modules/**/*", "./eslint.config.mjs", "./dist/**/*"]
+}
