@@ -2,7 +2,6 @@ import { createServer } from "node:http";
 import os from "node:os";
 
 const app = createServer((req, res) => {
-  console.log(JSON.stringify(req));
   res.writeHead(200, {
     "content-type": "Appliction/json",
     server: `${os.arch()} ${os.hostname} ${os.machine()} ${os.version} ${
