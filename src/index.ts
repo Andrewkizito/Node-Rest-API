@@ -13,4 +13,4 @@ const app = createServer((req, res) => {
   res.end(JSON.stringify({ app: "Hello" }));
 });
 
-app.listen(8000, () => console.log("Server started on http://localhost:8000"));
+app.listen(8000, () => console.log("Server started - http://localhost:8000"));
